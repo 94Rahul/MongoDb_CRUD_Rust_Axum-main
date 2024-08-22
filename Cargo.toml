@@ -1,0 +1,15 @@
+[package]
+name = "mongo_db_crud"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = { version = "0.7.5", features = ["json"] }              #Server and Api
+serde = { version = "1.0.208", features = ["derive"] }         #json
+serde_json = "1.0.125"                                         #json
+tokio = { version = "1.39.3", features = ["rt-multi-thread"] } #async
+dotenv = "0.15.0"
+lazy_static = "1.4.0"
+mongodb = "3.0.1"
